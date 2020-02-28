@@ -5,10 +5,21 @@
     <tittle>Estructura css</tittle>
 </head>
 <body>
-    <header></header>
+    <header>
+        <h1>Estructura con posición absoluta</h1>
+    </header>
     <section>
-        <nav></nav>
-        <article></article>
+        <nav>
+            <ul>
+            <li>inicio</li>
+            <li>nosotros</li>
+            <li>servicios</li>
+            <li>contacto</li>
+            </ul>
+        </nav>
+        <article>
+            <h2></h2
+        </article>
         <article></article>
         <article></article>
     </section>
