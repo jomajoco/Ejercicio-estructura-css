@@ -3,6 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>Estructura css</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: coral;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 100px;
+            font-family: 'Montserrat';
+        }
+        header, section, nav, article, footer{
+            padding: 15px;
+            margin: 15px;
+        }
+        header{
+            background: white;
+            text-align: center;
+            color: coral;
+        }
+        section{
+            background: beige;
+            position: relative;
+        }
+        nav{
+            background: coral;
+            position: absolute;
+            left: 0px;
+            width: 200px;
+        }
+        article{
+            background: coral;
+            margin-left: 220px;
+        }
+        footer{
+            background: coral;
+            text-align: center;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 70px;
+            width: 100%;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -11,27 +58,27 @@
     <section>
         <nav>
             <ul>
-            <li>inicio</li>
-            <li>nosotros</li>
-            <li>servicios</li>
-            <li>contacto</li>
+            <li>Inicio</li>
+            <li>Nosotros</li>
+            <li>Servicios</li>
+            <li>Contacto</li>
             </ul>
         </nav>
         <article>
-            <h2>Artículo1</h2>
+            <h2>Artículo 1</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum efficitur est vel bibendum. In efficitur tellus eget odio malesuada cursus. Nullam laoreet, nisi vel maximus elementum, leo orci viverra neque, a auctor ligula lorem et tellus. Nunc aliquet lorem nibh, vel mollis magna egestas non. Nam at sagittis enim. Donec convallis posuere arcu non tempor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed urna dui, aliquam bibendum luctus et, laoreet sit amet dolor. Quisque ultricies eget enim ac mattis. Vestibulum iaculis est a dolor venenatis varius.</p>
         </article>
         <article>
-            <h2>Artículo2</h2>
+            <h2>Artículo 2</h2>
                 <p>Fusce ornare auctor libero, eu imperdiet erat hendrerit id. In vehicula dignissim mauris, eu tempor nibh auctor non. Fusce id fermentum nunc. Donec id justo a erat volutpat tincidunt vitae eget risus. Phasellus arcu lacus, bibendum ac nunc id, consequat egestas eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer tempor feugiat tellus nec iaculis. Praesent ut tortor suscipit, viverra risus id, efficitur nulla. Vestibulum urna augue, vulputate a ex non, lacinia sollicitudin quam. Nam venenatis pellentesque mattis. Vestibulum cursus hendrerit elit, finibus luctus turpis dapibus id.</p>
         </article>
         <article>
-            <h2>Artículo3</h2>
+            <h2>Artículo 3</h2>
                 <p>Suspendisse dignissim sapien justo, eu feugiat est placerat vel. Proin vitae augue non urna blandit gravida. Aliquam ac orci egestas, semper quam sit amet, gravida lectus. Mauris id nisi eget leo malesuada posuere ut non dolor. Vivamus commodo a mauris eu semper. Pellentesque nec varius urna. In elementum ornare turpis, ut aliquam tortor vestibulum a. Curabitur quis cursus augue.</p>
         </article>
     </section>
     <footer>
-        © Todos los derechos reservados
+        © Todos los derechos reservados 2020
     </footer>
 </body>
 </html>
