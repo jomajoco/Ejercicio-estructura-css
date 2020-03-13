@@ -2,9 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Estructura con Flexbox</title>
+    <title>Estructura con Flexbox Grid</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="flexboxgrid.css">
     <style>
         *{
             box-sizing: border-box;
@@ -15,15 +16,11 @@
             padding: 0;
             font-family: 'Montserrat';
         }
-        header, section, nav, article, footer{
-            padding: 15px;
-            margin: 15px;
-            display: block;
-        }
         header{
             background: white;
             text-align: center;
             color: coral;
+            padding: 2em 0;
         }
         section{
             background: beige;
@@ -31,70 +28,54 @@
         nav{
             background: coral;
         }
-        .contenedor{
-            display: block
-        }
         article{
             background: coral;
+            padding: 1em;
+            margin: 1em;
         }
         footer{
             background: coral;
             text-align: center;
-            color: white;
             height: 70px;
-            width: 100%;
-            margin: 0;
-        }
+            padding: 1.5em 0;
+            }
+        .row{
+             margin-right: 0;
+             margin-left: 0;     
         
-        @media screen and (min-width:768px) {
-            /* aqui inicia los estilos de tablet*/
-            section{
-                display: flex;
-            }
-            nav {
-                width: 200px;
-                min-width: 100px;
-            }
-            .contenedor {
-                flex: 1;
-            }
-            /* aqui inicia los estilos de tablet*/
         }
-         @media screen and (min-width:1024px) {
-            /* aqui inicia los estilos de tablet*/
-             nav {
-                 width: 300px;
-             }
+        @media screen and (min-width:1024px) {
+            /* aqui inicia los estilos de laptop*/
              h1 {
                  font-size: 48px;
              }
-            /* aqui inicia los estilos de tablet*/
+            /* aqui inicia los estilos de laptop*/
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Estructura con Flexbox</h1>
+        <h1>Estructura con Flexbox Grid</h1>
     </header>
-    <section>
-        <nav>
-            <ul>
+    <section class="row">
+        <nav class="col-xs-12 col-sm-4 col-md-3">
+            <ul class="box">
             <li>Inicio</li>
             <li>Nosotros</li>
             <li>Servicios</li>
             <li>Contacto</li>
             </ul>
         </nav>
-        <div class="contenedor">
-        <article>
+        <div class="col-xs-12 col-sm-8 col-md-9">
+        <article class="box">
             <h2>Artículo 1</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum efficitur est vel bibendum. In efficitur tellus eget odio malesuada cursus. Nullam laoreet, nisi vel maximus elementum, leo orci viverra neque, a auctor ligula lorem et tellus. Nunc aliquet lorem nibh, vel mollis magna egestas non. Nam at sagittis enim. Donec convallis posuere arcu non tempor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed urna dui, aliquam bibendum luctus et, laoreet sit amet dolor. Quisque ultricies eget enim ac mattis. Vestibulum iaculis est a dolor venenatis varius.</p>
         </article>
-        <article>
+        <article class="box">
             <h2>Artículo 2</h2>
                 <p>Fusce ornare auctor libero, eu imperdiet erat hendrerit id. In vehicula dignissim mauris, eu tempor nibh auctor non. Fusce id fermentum nunc. Donec id justo a erat volutpat tincidunt vitae eget risus. Phasellus arcu lacus, bibendum ac nunc id, consequat egestas eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer tempor feugiat tellus nec iaculis. Praesent ut tortor suscipit, viverra risus id, efficitur nulla. Vestibulum urna augue, vulputate a ex non, lacinia sollicitudin quam. Nam venenatis pellentesque mattis. Vestibulum cursus hendrerit elit, finibus luctus turpis dapibus id.</p>
         </article>
-        <article>
+        <article class="box">
             <h2>Artículo 3</h2>
                 <p>Suspendisse dignissim sapien justo, eu feugiat est placerat vel. Proin vitae augue non urna blandit gravida. Aliquam ac orci egestas, semper quam sit amet, gravida lectus. Mauris id nisi eget leo malesuada posuere ut non dolor. Vivamus commodo a mauris eu semper. Pellentesque nec varius urna. In elementum ornare turpis, ut aliquam tortor vestibulum a. Curabitur quis cursus augue.</p>
         </article>
