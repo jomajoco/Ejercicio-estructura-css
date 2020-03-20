@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Estructura con Flexbox</title>
+    <title>Estructura con css grid</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width">
     <style>
@@ -49,32 +49,26 @@
         @media screen and (min-width:768px) {
             /* aqui inicia los estilos de tablet*/
             section{
-                display: flex;
-            }
-            nav {
-                width: 200px;
-                min-width: 100px;
-            }
-            .contenedor {
-                flex: 1;
+                display: grid;
+                grid-template: 1fr / 200px 1fr; 
             }
             /* aqui inicia los estilos de tablet*/
         }
          @media screen and (min-width:1024px) {
             /* aqui inicia los estilos de tablet*/
-             nav {
-                 width: 300px;
-             }
              h1 {
                  font-size: 48px;
              }
+             section{
+                grid-template: 1fr / 300px 1fr; 
+            }
             /* aqui inicia los estilos de tablet*/
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Estructura con Flexbox</h1>
+        <h1>Estructura con css grid</h1>
     </header>
     <section>
         <nav>
